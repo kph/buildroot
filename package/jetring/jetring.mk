@@ -17,7 +17,7 @@ define HOST_JETRING_BUILD_CMDS
 endef
 
 define HOST_JETRING_INSTALL_CMDS
-#	$(INSTALL) -D -m 0755 $(@D)/sgdisk $(HOST_DIR)/sbin/sgdisk
+	$(HOST_MAKE_ENV) $(MAKE) DESTDIR=$(HOST_DIR) -C $(@D) install
 endef
 
 $(eval $(host-generic-package))
