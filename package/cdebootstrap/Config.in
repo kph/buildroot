@@ -6,7 +6,7 @@ config BR2_PACKAGE_CDEBOOTSTRAP
 	select BR2_PACKAGE_BZIP2
 	select BR2_PACKAGE_XZ
 	help
-	  cdebootstrap generates systems from scratch for Debian and\
+	  cdebootstrap generates systems from scratch for Debian and
 	  derivates.
 
 	  https://packages.debian.org/cdebootstrap
