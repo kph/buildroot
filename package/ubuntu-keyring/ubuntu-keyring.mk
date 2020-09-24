@@ -15,9 +15,6 @@ define UBUNTU_KEYRING_BUILD_CMDS
 endef
 
 define UBUNTU_KEYRING_INSTALL_TARGET_CMDS
-	pwd
-	echo $(BUILD_DIR)
-	env
 	$(INSTALL) -m 0755 -d $(TARGET_DIR)/usr/share/keyrings
 	$(INSTALL) -m 0644 -t $(TARGET_DIR)/usr/share/keyrings $(@D)/keyrings/*
 endef
